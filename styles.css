@@ -1,0 +1,434 @@
+
+body.bg-light-pink { 
+  background: url('../images/FondoLeopardo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.text-pink { 
+  color: #d63384; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.text-dark-pink { 
+  color: #fff; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+.bg-pink { background-color: #f783ac; }
+.table-light-pink { 
+  background-color: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.btn-menu { 
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: #d63384; 
+  font-weight: bold; 
+  border: 2px solid #d63384;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-menu:hover { 
+  background-color: #d63384; 
+  color: white; 
+  transform: scale(1.05); 
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+.btn-outline-pink { border: 2px solid #f06595; color: #f06595; background-color: white; transition: all 0.3s ease; }
+.btn-outline-pink:hover { background-color: #f783ac; color: white; transform: scale(1.05); }
+.emmi { 
+  font-family: 'Brush Script MT', cursive; 
+  font-size: 3.5rem; 
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+}
+.curvado { 
+  display: inline-block; 
+  font-size: 2.8rem; 
+  color: white; 
+  transform: rotate(-5deg); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0.5rem;
+}
+.seccion { 
+  margin-top: 2rem; 
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.rosa-2025 { color: #e83e8c; }
+.border-pink { border: 2px solid #f783ac; border-radius: 10px; }
+
+.color-celda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 30px;
+  min-width: 40px;
+  padding: 0.5rem;
+}
+
+/* Header destacado para modal agregar */
+.modal-header-agregar {
+  background: linear-gradient(90deg, #f783ac 60%, #fff0f6 100%);
+  color: #fff;
+}
+/* Header destacado para modal editar */
+.modal-header-editar {
+  background: linear-gradient(90deg, #e83e8c 60%, #fff0f6 100%);
+  color: #fff;
+}
+.modal-title i {
+  margin-right: 8px;
+}
+/* Botones modales */
+.btn-guardar-cambios {
+  background: #e83e8c;
+  color: #fff;
+  border: none;
+}
+.btn-guardar-cambios:hover {
+  background: #ad2167;
+}
+
+/* Estilos para el formulario del modal */
+.modal-dialog {
+  margin: 0.5rem;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin: 1.75rem auto;
+    max-width: 500px;
+  }
+}
+.modal-content {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-body {
+  padding: 0.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 575.98px) {
+  .modal-content {
+    margin: 0;
+    border-radius: 0;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  .modal-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 0.75rem 1rem;
+  }
+  
+  .modal-body {
+    padding: 1rem 0.75rem;
+    max-height: none;
+  }
+  
+  .btn-close {
+    font-size: 0.8rem;
+    padding: 0.35rem;
+  }
+  
+  .form-control, 
+  .form-control-lg {
+    padding: 0.4rem 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .color-picker-container {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .btn-pink {
+    padding: 0.65rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.input-group {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.input-group:focus-within {
+  box-shadow: 0 0 0 2px rgba(255, 117, 140, 0.2);
+}
+
+.input-group-text {
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-left: none;
+  color: #ff758c;
+  padding: 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.form-control {
+  border: 1px solid #e9ecef;
+  border-right: none;
+  padding: 0.5rem 0.75rem;
+  height: auto;
+  font-size: 0.9rem;
+  background-color: white;
+  transition: all 0.2s ease;
+  min-height: 42px; /* Asegura un tamaño táctil mínimo */
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ff758c;
+  background-color: #fff9fa;
+}
+
+.form-control-lg {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+.form-text {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.form-control:focus {
+  border-color: #f783ac;
+  box-shadow: 0 0 0 0.25rem rgba(247, 131, 172, 0.25);
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.invalid-feedback {
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* Mejoras para el selector de color */
+.color-picker-container {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  border: 2px solid white;
+  flex-shrink: 0;
+}
+
+.color-picker-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-control-color {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.color-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+}
+
+/* Estilos para el botón de guardar */
+.btn-pink {
+  background-color: #f783ac;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  min-height: 44px; /* Tamaño táctil mínimo para móviles */
+}
+
+.btn-pink:hover {
+  background-color: #e83e8c;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(247, 131, 172, 0.3);
+}
+
+.btn-pink:active {
+  transform: translateY(0);
+}
+
+.btn-agregar-modal {
+  background: #f783ac;
+  color: #fff;
+  border: none;
+}
+.btn-agregar-modal:hover {
+  background: #e83e8c;
+}
+/* Feedback visual en inputs */
+.form-control:focus {
+  border-color: #e83e8c;
+  box-shadow: 0 0 0 0.2rem #f783ac55;
+}
+/* Estilos para los títulos */
+.encabezado {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem !important;
+}
+
+.bienvenida-panza {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5rem;
+  color: #d63384;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  position: relative;
+  transform: perspective(300px) rotateX(15deg);
+  transform-style: preserve-3d;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  transform-origin: 50% 50%;
+  transition: transform 0.3s ease;
+}
+
+.bienvenida-panza:hover {
+  transform: perspective(300px) rotateX(15deg) scale(1.05);
+}
+
+.bienvenida-panza::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f06292, transparent);
+}
+
+.titulo-emmi {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.2rem;
+  color: #e91e63;
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+  padding: 0 1.5rem;
+}
+
+.titulo-emmi::after {
+  content: '✧';
+  margin: 0 0.8rem;
+  color: #f48fb1;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.titulo-emmi::before {
+  content: '✧';
+  margin: 0 0.8rem;
+  color: #f48fb1;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.emmi-y-subtitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: -1.2rem;
+}
+
+.subtitulo-vestidor {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.8rem;
+  color: #e91e63;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+  margin: 0.4rem 0 0 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Importar fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Quicksand:wght@300;400;500&display=swap');
